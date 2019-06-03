@@ -1,13 +1,13 @@
 package model;
 
-import java.util.Date;
+import java.sql.Timestamp;
 
 public class Image {
     private int imageId;
     private int userId;
     private String imagePath;
-    private java.sql.Date processStartTime;
-    private java.sql.Date processEndTime;
+    private Timestamp processStartTime;
+    private Timestamp processEndTime;
     private int pixelSize;
     private int iterationTimes;
 
@@ -36,19 +36,19 @@ public class Image {
         this.imagePath = imagePath;
     }
 
-    public java.sql.Date getProcessStartTime() {
+    public Timestamp getProcessStartTime() {
         return processStartTime;
     }
 
-    public void setProcessStartTime(java.sql.Date processStartTime) {
+    public void setProcessStartTime(Timestamp processStartTime) {
         this.processStartTime = processStartTime;
     }
 
-    public java.sql.Date getProcessEndTime() {
+    public Timestamp getProcessEndTime() {
         return processEndTime;
     }
 
-    public void setProcessEndTime(java.sql.Date processEndTime) {
+    public void setProcessEndTime(Timestamp processEndTime) {
         this.processEndTime = processEndTime;
     }
 

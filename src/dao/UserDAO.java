@@ -5,7 +5,7 @@ import model.User;
 public interface UserDAO {
     boolean insert(User u);
     //boolean delete(User u);
-    User selectById(int id);
+    User selectByUserId(int id);
     int validateCredentials(String login, String password);
 
 

@@ -1,21 +1,28 @@
 package model;
 
 //Imports
+import dao.ImageDAO;
 import dao.UserDAO;
+import dao.mysql.ImageDAOMysql;
 import dao.mysql.UserDAOMysql;
 //
 import java.util.Date;
+import java.util.List;
 
 public class User {
     private Integer userId;
     private String login;
     private String password;
     private Date dateCreated;
-    private UserDAO dao;
+    private List<Image> imgs;
+    private UserDAO userDao;
+    private ImageDAO imageDao;
 
 
     public User (){
-        this.dao = new UserDAOMysql();
+        this.userDao = new UserDAOMysql();
+        this.imageDao = new ImageDAOMysql();
+
     }
 
 
@@ -52,20 +59,49 @@ public class User {
         this.dateCreated = dateCreated;
     }
 
+    public List<Image> getImgs() {
+        return imgs;
+    }
 
-    //
+    public void setImgs(List<Image> imgs) {
+        this.imgs = imgs;
+    }
+
+    public UserDAO getUserDao() {
+        return userDao;
+    }
+
+    public void setUserDao(UserDAO userDao) {
+        this.userDao = userDao;
+    }
+
+    public ImageDAO getImageDao() {
+        return imageDao;
+    }
+
+    public void setImageDao(ImageDAO imageDao) {
+        this.imageDao = imageDao;
+    }
+
+    //Methods
     public boolean createNewUser(){
-        return dao.insert(this);
+        return userDao.insert(this);
     }
 
     //
     public int validateCredentials(String login, String password) {
-        return this.dao.validateCredentials(login, password);
+        return this.userDao.validateCredentials(login, password);
     }
 
     //Given an ID, returns an User object with that ID (returns null if no user was found)
     public User getUserById(int id){
-        return this.dao.selectById(id);
+        User u = this.userDao.selectByUserId(id);
+
+        //If exists an user with that user_id, find all images that this user has
+        if (u != null)
+            this.imgs = this.imageDao.selectByUserId(u.getUserId());
+
+        return u;
     }
 
 

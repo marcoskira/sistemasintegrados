@@ -21,7 +21,7 @@ public class UserDAOMysql implements UserDAO {
          this.ds = new DataSourceFactory().getMysqlDataSource();
     }
 
-    //Inserts a new registry in person table
+    //Inserts a new registry in user table
     public boolean insert(User u){
         try {
             this.conn = ds.getConnection();
@@ -48,18 +48,17 @@ public class UserDAOMysql implements UserDAO {
                 System.out.println(e);
                 this.conn.rollback();
                 stmt.close();
-                return false;
             }
 
         }
         catch(SQLException e){
             System.out.println(e);
-            return false;
         }
+        return false;
     }
 
 
-    public User selectById(int id){
+    public User selectByUserId(int id){
         User user = null;
 
         try {
