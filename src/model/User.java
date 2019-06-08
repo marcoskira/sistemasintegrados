@@ -6,6 +6,7 @@ import dao.UserDAO;
 import dao.mysql.ImageDAOMysql;
 import dao.mysql.UserDAOMysql;
 //
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -22,6 +23,7 @@ public class User {
     public User (){
         this.userDao = new UserDAOMysql();
         this.imageDao = new ImageDAOMysql();
+        this.imgs = new ArrayList<>();
 
     }
 
@@ -99,7 +101,7 @@ public class User {
 
         //If exists an user with that user_id, find all images that this user has
         if (u != null)
-            this.imgs = this.imageDao.selectByUserId(u.getUserId());
+            u.imgs = this.imageDao.selectByUserId(u.getUserId());
 
         return u;
     }

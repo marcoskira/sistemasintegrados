@@ -66,7 +66,7 @@ public class ImageDAOMysql implements ImageDAO{
 
 
     public List<Image> selectByUserId(int userId){
-        List<Image> imgs = null;
+        List<Image> imgs = new ArrayList<Image>();
 
         try{
             this.conn = this.ds.getConnection();
@@ -78,8 +78,10 @@ public class ImageDAOMysql implements ImageDAO{
 
             while(rs.next()){
                 Image image = new Image();
+
                 image.setImageId(rs.getInt("image_id"));
                 image.setUserId(rs.getInt("user_id"));
+                image.setImagePath(rs.getString("image_path"));
                 image.setProcessStartTime(rs.getTimestamp("process_start_time"));
                 image.setProcessEndTime(rs.getTimestamp("process_end_time"));
                 image.setPixelSize(rs.getInt("pixel_size"));
@@ -99,3 +101,4 @@ public class ImageDAOMysql implements ImageDAO{
 
 
 }
+

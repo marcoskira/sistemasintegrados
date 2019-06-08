@@ -22,20 +22,21 @@ public class Main {
 
         u = u.getUserById(4);
 
+         /*
         System.out.println(u.getUserId());
         System.out.println(u.getLogin());
         System.out.println(u.getPassword());
         System.out.println(u.getDateCreated());
         System.out.print("-----------------");
- /*       for(Image i: u.getImgs()){
-            System.out.println(i.getImageId());
-            System.out.println(i.getUserId());
-            System.out.println(i.getProcessEndTime());
-            System.out.println(i.getProcessEndTime());
-            System.out.println(i.getImagePath());
-            System.out.println(i.getPixelSize());
-            System.out.println(i.getIterationTimes());
-        }*/
+*/
+
+      for(Image i: u.getImgs()){
+          System.out.println("UserId: " + i.getUserId());
+          System.out.println("ImageId: " + i.getImageId());
+          System.out.println("ImagePath: " + i.getImagePath());
+          System.out.println("------------");
+      }
+
 
 
     }
