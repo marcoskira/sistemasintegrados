@@ -95,7 +95,11 @@ public class User {
         return this.userDao.validateCredentials(login, password);
     }
 
-    //Given an ID, returns an User object with that ID (returns null if no user was found)
+
+    /**
+     * @param id
+     * @return
+     */
     public User getUserById(int id){
         User u = this.userDao.selectByUserId(id);
 

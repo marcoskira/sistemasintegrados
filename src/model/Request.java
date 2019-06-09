@@ -2,10 +2,13 @@ package model;
 
 //Imports
 import dao.RequestDAO;
+import dao.mysql.RequestDAOMysql;
+
 import java.sql.Timestamp;
 
 public class Request {
     private int requestId;
+    private int userId;
     private String signalPath;
     private float signalSize;
     private char status;
@@ -16,7 +19,7 @@ public class Request {
     private RequestDAO requestDAO;
 
     public Request(){
-        requestDAO = new RequestDAO();
+        requestDAO = new RequestDAOMysql();
     }
 
     public int getRequestId() {
@@ -25,6 +28,14 @@ public class Request {
 
     public void setRequestId(int requestId) {
         this.requestId = requestId;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public String getSignalPath() {
