@@ -92,15 +92,21 @@ public class UserDAOMysql implements UserDAO {
             stmt.setString(1, login);
             ResultSet rs = stmt.executeQuery();
 
-            if(rs.getString("password").equals(password))
-                return rs.getInt("user_id");
-            else
-                return 0;
+            if(rs.next()){
+                if(rs.getString("password").equals(password))
+                    return rs.getInt("user_id");
+                else
+                    return 0;
+            }
+            else {
+                return -1;
+            }
+
 
 
         }catch(SQLException e){
             System.out.println(e);
-            return 0;
+            return -1;
         }
     }
 }

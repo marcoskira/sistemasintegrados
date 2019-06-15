@@ -12,13 +12,30 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox id="loginVbox" alignment="CENTER" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+
+
+<VBox id="loginVbox" alignment="CENTER" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
    <children>
       <Pane prefHeight="406.0" prefWidth="640.0">
          <children>
-            <TextField id="userTextfield" layoutX="377.0" layoutY="98.0" prefHeight="39.0" prefWidth="229.0" />
-            <PasswordField id="passwordTextfield" accessibleRole="PASSWORD_FIELD" layoutX="377.0" layoutY="194.0" prefHeight="39.0" prefWidth="229.0" />
-            <Button id="loginButton" layoutX="377.0" layoutY="261.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="229.0" text="Entrar" />
+
+            <!-- Login field -->
+            <Label layoutX="377.0" layoutY="67.0" text="Usuário">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userField" layoutX="377.0" layoutY="98.0" prefHeight="39.0" prefWidth="229.0" />
+
+            <!-- Password field -->
+            <Label layoutX="377.0" layoutY="163.0" text="Senha">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordField" accessibleRole="PASSWORD_FIELD" layoutX="377.0" layoutY="194.0" prefHeight="39.0" prefWidth="229.0" />
+
+            <!-- Left colorful rectangle -->
             <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="347.0">
                <fill>
                   <LinearGradient endX="1.0" endY="1.0">
@@ -29,17 +46,14 @@
                   </LinearGradient>
                </fill>
             </Rectangle>
-            <Text id="newuserText" layoutX="382.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clique aqui para criar uma nova conta" />
-            <Label layoutX="377.0" layoutY="67.0" text="Usuário">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="377.0" layoutY="163.0" text="Senha">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Label>
+
+            <!-- Login button -->
+            <Button fx:id="loginBtn" layoutX="377.0" layoutY="261.0" mnemonicParsing="false" onAction="#validateCredentials" prefHeight="39.0" prefWidth="229.0" text="Entrar" />
+
+            <!-- Create a new user -->
+            <Text fx:id="registerTxt" layoutX="382.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clique aqui para criar uma nova conta" />
+
+
          </children>
       </Pane>
    </children>
