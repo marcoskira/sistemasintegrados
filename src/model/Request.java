@@ -93,4 +93,8 @@ public class Request {
     public void setRequestDAO(RequestDAO requestDAO) {
         this.requestDAO = requestDAO;
     }
+
+    public boolean createNewRequest(){
+        return requestDAO.insert(this);
+    }
 }

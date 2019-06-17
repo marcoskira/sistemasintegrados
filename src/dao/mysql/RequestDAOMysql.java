@@ -1,10 +1,9 @@
 package dao.mysql;
 
-//Imports
 import dao.DataSourceFactory;
 import dao.RequestDAO;
 import model.Request;
-//
+
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -22,14 +21,13 @@ public class RequestDAOMysql implements RequestDAO {
     public boolean insert(Request req){
         try {
             this.conn = ds.getConnection();
+            conn.setAutoCommit(false);
 
-            String sql = "INSERT INTO request_queue(user_id, signal_path, signal_size, process_start_time, process_end_time) VALUES(?,?,?,?,?,?)";
+            String sql = "INSERT INTO request_queue(user_id, signal_path, signal_size) VALUES(?,?,?)";
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setInt(1, req.getUserId());
             stmt.setString(2, req.getSignalPath());
             stmt.setFloat(3, req.getSignalSize());
-            stmt.setTimestamp(4, req.getProcessStartTime());
-            stmt.setTimestamp(5, req.getProcessEndTime());
 
             try {
                 stmt.execute();

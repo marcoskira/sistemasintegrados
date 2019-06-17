@@ -51,8 +51,7 @@ public class LoginFormController {
         System.out.println("User does not exist");
     }
 
-    @FXML
-    private void openHomeView(){
+    public void openHomeView(){
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/home.fxml"));
             Parent root = (Parent) fxmlLoader.load();
