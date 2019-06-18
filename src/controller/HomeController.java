@@ -48,17 +48,17 @@ public class HomeController implements Initializable {
         }
     }
 
+
     public String uploadIntoFileServer(File file){
         Properties prop = new Properties();
         FileInputStream propfile = null;
         File userFolder = null;
         try{
-            propfile = new FileInputStream("E:/Dropbox/Faculdade/Sistemas Integrados/out/production/Sistemas Integrados/controller/filepath.properties");
+            propfile = new FileInputStream("src/controller/filepath.properties");
             prop.load(propfile);
 
             //verify if user has a folder, if not, create one
             userFolder = new File(prop.getProperty("SIGNALFILE_PATH") + "/" + this.user.getLogin());
-            System.out.println(prop.getProperty("SIGNALFILE_PATH") + "/" + this.user.getLogin());
             if(!userFolder.exists()){
                 System.out.println("Creating " + this.user.getLogin() + " directory...");
                 userFolder.mkdirs();
@@ -75,8 +75,9 @@ public class HomeController implements Initializable {
         }catch (Exception e){
             System.out.println(e);
         }
-        return userFolder.getPath();
+        return userFolder.getPath() + "\\" + file.getName();
     }
+
 
     public boolean createNewRequest(String filepath){
         Request request = new Request();

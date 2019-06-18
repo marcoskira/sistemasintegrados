@@ -16,7 +16,7 @@ public class DataSourceFactory {
         MysqlDataSource ds = new MysqlDataSource();;
 
         try {
-            fis = new FileInputStream("E:/Dropbox/Faculdade/Sistemas Integrados/out/production/Sistemas Integrados/dao/db.properties");
+            fis = new FileInputStream("src/dao/db.properties");
             props.load(fis);
         }
         catch (IOException e) {

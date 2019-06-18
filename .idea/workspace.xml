@@ -1,24 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db89c3a9-9c95-4357-a560-9d86445c8e85" name="Default Changelist" comment="08/06 update">
-      <change afterPath="$PROJECT_DIR$/lib/commons-io-2.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/filepath.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28def511-8d1d-4240-a1da-c41c88af3315.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/28def511-8d1d-4240-a1da-c41c88af3315.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="db89c3a9-9c95-4357-a560-9d86445c8e85" name="Default Changelist" comment="16/06 update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sistemas Integrados.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Sistemas Integrados.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas Integrados/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sistemas Integrados/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas Integrados/dao/mysql/ImageDAOMysql.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sistemas Integrados/dao/mysql/ImageDAOMysql.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas Integrados/dao/mysql/UserDAOMysql.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sistemas Integrados/dao/mysql/UserDAOMysql.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sistemas Integrados/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sistemas Integrados/model/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginFormController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/DataSourceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/DataSourceFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/mysql/RequestDAOMysql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/mysql/RequestDAOMysql.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/login.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,18 +39,18 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/login.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
+            <state>
               <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
             </state>
           </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/LoginFormController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
+            <state relative-caret-position="418">
               <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -76,43 +62,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controller/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            <state relative-caret-position="-88">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
               <folding>
-                <element signature="e#480#481#0" expanded="true" />
-                <element signature="e#512#513#0" expanded="true" />
-                <element signature="e#728#729#0" expanded="true" />
-                <element signature="e#760#761#0" expanded="true" />
-                <element signature="e#711#712#0" expanded="true" />
-                <element signature="e#759#760#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dao/db.properties">
+        <entry file="file://$PROJECT_DIR$/src/dao/mysql/ImageDAOMysql.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="48" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/filepath.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dao/DataSourceFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="115" />
+            <state relative-caret-position="660">
+              <caret line="84" column="81" lean-forward="true" selection-start-line="84" selection-start-column="81" selection-end-line="84" selection-end-column="81" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/28def511-8d1d-4240-a1da-c41c88af3315/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            <state relative-caret-position="308">
+              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -213,7 +176,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -230,13 +192,14 @@
               <item name="Sistemas Integrados" type="b2602c69:ProjectViewProjectNode" />
               <item name="Sistemas Integrados" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -249,6 +212,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
+    <property name="database.data.extractors.current.id" value="Tab-separated (TSV)_id" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Sistemas Integrados.iml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -335,7 +299,8 @@
       <workItem from="1560097353902" duration="7618000" />
       <workItem from="1560555569755" duration="2501000" />
       <workItem from="1560607926634" duration="11045000" />
-      <workItem from="1560635118392" duration="22420000" />
+      <workItem from="1560635118392" duration="23296000" />
+      <workItem from="1560815341534" duration="3438000" />
     </task>
     <task id="LOCAL-00001" summary="08/06 update">
       <created>1559968572152</created>
@@ -365,11 +330,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560640926072</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="16/06 update">
+      <created>1560729725369</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1560729725369</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138513000" />
+    <option name="totallyTimeSpent" value="142827000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -384,7 +356,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13006397" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13113007" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -420,11 +392,12 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="08/06 update" />
     <MESSAGE value="view added" />
     <MESSAGE value="view updates" />
     <MESSAGE value="home view" />
-    <option name="LAST_COMMIT_MESSAGE" value="home view" />
+    <MESSAGE value="08/06 update" />
+    <MESSAGE value="16/06 update" />
+    <option name="LAST_COMMIT_MESSAGE" value="16/06 update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -590,16 +563,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/mysql/ImageDAOMysql.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/ImageDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -689,12 +652,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/home.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/mysql/RequestDAOMysql.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -767,14 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/login.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/io/File.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -803,27 +758,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/LoginFormController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/28def511-8d1d-4240-a1da-c41c88af3315/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/DataSourceFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="115" />
+        <state relative-caret-position="264">
+          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -833,28 +771,58 @@
     <entry file="file://$PROJECT_DIR$/src/controller/filepath.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/db.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="48" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+        <state relative-caret-position="88">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/login.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/LoginFormController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/mysql/ImageDAOMysql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="84" column="81" lean-forward="true" selection-start-line="84" selection-start-column="81" selection-end-line="84" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/28def511-8d1d-4240-a1da-c41c88af3315/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        <state relative-caret-position="-88">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
           <folding>
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
