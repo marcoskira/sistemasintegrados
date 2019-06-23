@@ -15,7 +15,6 @@ public class LoginFormController {
 
     @FXML private TextField userField;
     @FXML private PasswordField passwordField;
-    @FXML private Text registerTxt;
     private User user;
 
 
@@ -53,14 +52,16 @@ public class LoginFormController {
 
     public void openHomeView(){
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/home.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../view/main.fxml"));
             Parent root = (Parent) fxmlLoader.load();
 
-            HomeController homeController = fxmlLoader.getController();
-            homeController.setUser(user);
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.show();
+            MainController mainController = fxmlLoader.getController();
+            mainController.setUser(user);
+            Stage nextStage = new Stage();
+            Stage currentStage = (Stage) passwordField.getScene().getWindow();
+            nextStage.setScene(new Scene(root));
+            nextStage.show();
+            currentStage.close();
         }catch (Exception e){
             System.out.println(e);
         }

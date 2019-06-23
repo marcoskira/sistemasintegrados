@@ -25,9 +25,7 @@ public class HomeController implements Initializable {
     }
 
 
-    public void setUser(User user) {
-        this.user = user;
-    }
+
 
     public void setFilenameText(String text){
         this.filenameText.setText(text);
@@ -48,64 +46,6 @@ public class HomeController implements Initializable {
         }
     }
 
-
-    public String uploadIntoFileServer(File file){
-        Properties prop = new Properties();
-        FileInputStream propfile = null;
-        File userFolder = null;
-        try{
-            propfile = new FileInputStream("src/controller/filepath.properties");
-            prop.load(propfile);
-
-            //verify if user has a folder, if not, create one
-            userFolder = new File(prop.getProperty("SIGNALFILE_PATH") + "/" + this.user.getLogin());
-            if(!userFolder.exists()){
-                System.out.println("Creating " + this.user.getLogin() + " directory...");
-                userFolder.mkdirs();
-                System.out.println("Directory successfully created");
-            }
-
-            try {
-                FileUtils.copyFileToDirectory(file, userFolder);
-                System.out.println("Signal file successfully transferred");
-            } catch (Exception e){
-                System.out.println("Error while transferring file to server");
-            }
-
-        }catch (Exception e){
-            System.out.println(e);
-        }
-        return userFolder.getPath() + "\\" + file.getName();
-    }
-
-
-    public boolean createNewRequest(String filepath){
-        Request request = new Request();
-        request.setUserId(user.getUserId());
-        request.setSignalSize(((float) signalFile.length()));
-        request.setSignalPath(filepath);
-
-        return request.createNewRequest();
-    }
-
-
-    public void uploadFile(){
-        if(this.signalFile != null){
-            String filepath = uploadIntoFileServer(this.signalFile);
-
-            if(filepath != null){
-                if(createNewRequest(filepath)){
-                    System.out.println("File successfully uploaded. Your request is now waiting to be processed");
-                }
-                else {
-                    System.out.println("Error while uploading your file. Try again.");
-                }
-            }
-
-        }else {
-            System.out.println("Select a file before upload");
-        }
-    }
 
 
 
