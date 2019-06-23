@@ -15,6 +15,7 @@ CREATE TABLE `user` (
   UNIQUE KEY `login` (`login`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 
+#
 
 CREATE TABLE `image` (
   `image_id` int(11) NOT NULL AUTO_INCREMENT,
@@ -29,6 +30,7 @@ CREATE TABLE `image` (
   CONSTRAINT `image_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 
+#
 
 CREATE TABLE `request_queue` (
   `request_id` int(11) NOT NULL AUTO_INCREMENT,
