@@ -4,10 +4,7 @@ Language: Java
 GUI: JavaFX 11
 Database: MySQL 5.1
 
-
-##Create table statements
-
-##USER table
+## Create table statements
 
 CREATE TABLE `user` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
@@ -18,9 +15,6 @@ CREATE TABLE `user` (
   UNIQUE KEY `login` (`login`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 
-
-
-##IMAGE table
 
 CREATE TABLE `image` (
   `image_id` int(11) NOT NULL AUTO_INCREMENT,
@@ -36,7 +30,6 @@ CREATE TABLE `image` (
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 
 
-##REQUEST_QUEUE table
 CREATE TABLE `request_queue` (
   `request_id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
