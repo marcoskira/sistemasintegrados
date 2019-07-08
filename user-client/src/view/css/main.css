@@ -1,0 +1,25 @@
+#content {
+    -fx-padding: 50 20 20 20;
+    -fx-min-width: 600;
+    -fx-min-height: 200;
+    -fx-translate-y: 50;
+}
+
+#menu {
+    -fx-min-height: 50;
+    -fx-min-width: 600;
+}
+
+#filenameText {
+    -fx-min-height: 50;
+    -fx-pref-width: 600;
+    -fx-translate-y: 200;
+    -fx-background-color: black;
+}
+
+#selectFileBtn {
+    -fx-min-height: 50;
+    -fx-pref-width: 600;
+    -fx-translate-y: 200;
+    -fx-background-color: black;
+}
